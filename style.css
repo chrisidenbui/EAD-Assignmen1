@@ -3,12 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: cursive;
     /* background-color: black; */
 }
+/* ---------------------------------------------------------------------------- */
 
 /* Arrange and decor the nav bar */
 .nav-bar {
     /* position: fixed; */
+    position: relative;
     width: 100%;
     /* padding: 30px; */
     font-family: monospace;
@@ -34,69 +37,166 @@
     font-weight: 600;
     /* transition: .3s ease-in-out; */
 }
+/* ---------------------------------------------------------------------------- */
 
 /* Decor the center nav menu button */
 .nav-bar .nav-menu li {
+    position: relative;
     list-style: none;
     display: inline-block;
 }
-.nav-bar .nav-menu li a {
+.nav-bar .nav-menu .main-menu {
+    margin-left: 25px;
+    border: 2px solid transparent;
+}
+.nav-bar .nav-menu .main-menu {
+    margin-left: 25px;
+    border: 2px solid transparent;
+}
+.nav-bar .nav-menu .main-menu > a {
     color: white;
     font-size: 20px;
     font-weight: 800;
-    margin-left: 25px;
     transition: 0.5s;
 }
-.nav-bar .nav-menu li a:hover {
+.nav-bar .nav-menu .main-menu > a:hover {
     color: rgb(167, 167, 167);
 }
+.nav-bar .nav-menu .main-menu > a:before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav-bar .nav-menu .main-menu > a:hover:before{
+    opacity: 1;
+    left: -10px;
+    top: -5px;
+}
+.nav-bar .nav-menu .main-menu > a:after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 20px;
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav-bar .nav-menu .main-menu > a:hover:after{
+    opacity: 1;
+    right: -10px;
+    bottom: -5px;
+}
+/* ---------------------------------------------------------------------------- */
 
 /* Decor the login and join button */
-.nav-bar .login .login-nav li{
+.nav-bar .login .login-nav li {
     list-style: none;
     display: inline-block;
+    position: relative;
 }
 .nav-bar .login .login-nav li a{
     color: white;
     font-size: 20px;
     font-weight: 800;
-    margin-left: 30px;
+    border: 1px solid transparent;
+    /* margin-left: 30px; */
     transition: 0.5s;
+}
+.nav-bar .login .login-nav .separate {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    height: 19px;
+    width: 2px;
+    background-color: rgb(212, 212, 212);
 }
 .nav-bar .login .login-nav li a:hover {
     color: rgb(167, 167, 167);
 }
+.nav-bar .login .login-nav > li > a:before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav-bar .login .login-nav > li > a:hover:before{
+    opacity: 1;
+    left: -10px;
+    top: -5px;
+}
+.nav-bar .login .login-nav > li > a:after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 20px;
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav-bar .login .login-nav > li > a:hover:after{
+    opacity: 1;
+    right: -10px;
+    bottom: -5px;
+}
+/* ---------------------------------------------------------------------------- */
 
 /* Decor dropdown button */
-.nav-menu .dropdown {
+.dropdown {
     position: absolute;
     /* padding: 5px; */
     background-color: black;
-    top: 60px;
+    /* top: 60px; */
     display: none;
+    
 }
 .nav-menu .dropdown li {
-    width: 150px;
+    /* position: relative; */
+    margin: 5px 25px 5px 25px;
+    width: fit-content;
     float: none;
     display: list-item;
     position: relative;
     display: block;
     padding: 5px 0;
-    color: white;
     text-decoration: none;
 }
 .nav-bar .nav-menu .dropdown li a {
-    font-size: 15px;
+    color: lightgray;
+    font-size: 17px;
     line-height: 30px;
     transition: 0.3s;
 }
 .nav-menu li:hover > .dropdown {
-    box-shadow: 0 0 20px 2px rgb(0, 0, 0);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
     display: block;
 }
+.dropdown > li:hover {
+    text-decoration: underline 1px;
+    text-underline-offset: 3px;
+}
+
+/* ---------------------------------------------------------------------------- */
 
 /* Arrange images and effect */
-.container {
+.gallery {
     column-count: 3;
     width: 100%;
     padding: 0px 130px;
@@ -112,16 +212,14 @@
     overflow: hidden;
     width: 100%;
     border-radius: 10px;
-    transition: 0.25s;
 }
 img {
     width: 100%;
     border-radius: 10px;
-    
+    transition: 0.25s;
 }
-.box:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px 2px rgb(0, 0, 0);
-    /* transform: scale(1.15);
-    z-index: 1; */
+.box:hover img {
+    transform: scale(1.2);
+    z-index: 1;
+    filter: brightness(0.7);
 }
