@@ -361,3 +361,162 @@ nav ul li a:hover::after{
         opacity: 1;
     }
 }
+
+.container_icon{
+    position: relative;
+    top: -60px;
+    left: 1100px;
+    width: 180px;
+    display: flex;
+    align-self: center;
+}
+
+.container_icon .icon{
+    width: 200px;
+    stroke-width: 20;
+    stroke: white;
+}
+.container_icon .icon path
+{
+    fill: white;
+    stroke-width: 20;
+    stroke: white;
+}
+.container_icon .heart path
+{
+    fill: transparent;
+    stroke-width: 20;
+    stroke: white;
+}
+.download{
+    position: relative;
+    left: 15%;
+}
+.share{
+    position: relative;
+    left: 30%;
+}
+.expand{
+    position: relative;
+    left: 45%;
+}
+.container_icon .icon.heart path
+{
+    stroke-dasharray: 1580;
+    stroke-dashoffset: 0;
+}
+
+.container_icon .icon.download path
+{
+    stroke-dasharray: 1780;
+    stroke-dashoffset: 0;
+}
+.container_icon .icon.share path
+{
+    stroke-dasharray: 1780;
+    stroke-dashoffset: 1780;
+}
+.container_icon .icon.expand path
+{
+    stroke-dasharray: 1780;
+    stroke-dashoffset: 0;
+}
+
+.container_icon .icon.heart:hover path
+{
+    animation: animated-heart 2s linear forwards;
+
+}
+
+.container_icon .icon.download:hover path
+{
+    animation: animated-download 2s linear forwards;
+}
+
+.container_icon .icon.share:hover path
+{
+    animation: animated-share 2s linear forwards;
+}
+.container_icon .icon.expand:hover path
+{
+    animation: animated-expand 2s linear forwards;
+}
+
+@keyframes animated-heart
+{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1580;
+    }
+    80%{
+        stroke-dashoffset: 3160;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3160;
+        fill: white;
+    }
+
+}
+
+@keyframes animated-download
+{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1780;
+    }
+    80%{
+        stroke-dashoffset: 3560;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3560;
+        fill: white;
+        display:contents;
+    }
+
+}
+
+@keyframes animated-share
+{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1780;
+    }
+    80%{
+        stroke-dashoffset: 3560;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3560;
+        fill: white;
+        display:contents;
+    }
+
+}
+
+@keyframes animated-expand
+{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1780;
+    }
+    80%{
+        stroke-dashoffset: 3560;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3560;
+        fill: white;
+        display:contents;
+    }
+
+}
