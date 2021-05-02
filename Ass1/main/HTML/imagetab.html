@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../CSS/imagetab_style.css">
+</head>
+<body>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<header>
+    <div class="menu-toggle" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="overlay"></div>
+    <div class="container">
+        <nav>
+            <h1 class="brand"><a href="">Photographics</a></h1>
+            <ul class="nav-bar">
+                <li><a href=""> Home </a></li>
+                <li><a href=""> Images </a>
+                    <ul class="dropdown">
+                        <li id="photos" ><a href=""> Photos </a></li>
+                        <li id="graphics"><a href=""> Graphics </a></li>
+                    </ul>
+                </li>
+                <li class="main-menu"><a href=""> Topics </a>
+                    <ul class="dropdown">
+                        <li id="animals"><a href=""> Animals </a></li>
+                        <li id="natures"><a href=""> Natures </a></li>
+                        <li id="sky"><a href=""> Sky </a></li>
+                        <li id="family"><a href=""> Family </a></li>
+                        <li id="love"><a href=""> Love </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Explore</a></li>
+                <li id="search"><a href="#">
+                    <img id="search_icon" src="../Images/search.png" width="20" height="20">
+                </a></li>
+                <li id="login"><a href="#">Login</a></li>
+                <li id="signUp"><a href="#">Sign up</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="left">
+    <h3 class="left" id="photo_credit">Photo by: #username</h3>
+    <h3 class="left" id="description">
+        Photo description:
+    </h3>
+    <h3 class="left" id="tag">
+        Tag: #night
+    </h3>
+</div>
+
+<div class="image">
+    <img src="../Images/image.png" alt="Lake picture" width="1080" height="500">
+</div>
+
+<div class="icon_bar">
+    <a href=""> <img id="left_icon" src="../Images/circle_chevron_left.png" width="40" height="40"> </a>
+    <a href=""> <img id="right_icon" src="../Images/circle_chevron_right.png" width="40" height="40"> </a>
+    <a href=""> <img id="heart_icon" src="../Images/Heart.png" width="40" height="40"> </a>
+    <a href=""> <img id="download_icon" src="../Images/short_down.png" width="40" height="40"> </a>
+    <a href=""> <img id="share_icon" src="../Images/PaperPlaneTilt.png" width="40" height="40"> </a>
+    <a href=""> <img id="expand_icon" src="../Images/expand.png" width="40" height="40"> </a>
+</div>
+
+<script src="../JS/imagetab_js.js"></script>
+</body>
+</html>
