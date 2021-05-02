@@ -37,16 +37,17 @@ header{
 
 /* Decor dropdown button */
 .dropdown {
-    position: absolute;
+    position: relative;
     /* margin: 20px 0; */
     /* padding: 5px; */
     background-color: black;
     /* top: 60px; */
     display: none;
+    top: 20%;
 }
 
 .dropdown li {
-    /* position: relative; */
+    position: relative;
     margin: 5px 25px 5px 25px;
     width: fit-content;
     display: list-item;
@@ -54,7 +55,7 @@ header{
     padding: 5px 0;
     text-decoration: none;
     position: absolute;
-    top: 40%;
+    top: -10%;
 }
 
 .dropdown li a {
@@ -63,43 +64,44 @@ header{
     line-height: 30px;
     transition: 0.3s;
     display: block;
-    position: absolute;
-    top: 40%;
+    position: relative;
+    top: -40%;
     z-index: 1;
+    background-color: transparent;
 }
 
 #photos a{
     position: relative;
-    top: 30px;
+    top: 5px;
 }
 
 #graphics a{
     position: relative;
-    top: 80px;
+    top: 55px;
 }
 
 #animals a{
     position: relative;
-    top: 30px;
+    top: 3px;
 }
 
 #natures a{
     position: relative;
-    top: 80px;
+    top: 53px;
 }
 
 #sky a{
     position: relative;
-    top: 130px;
+    top: 103px;
 }
 
 #family a{
     position: relative;
-    top: 180px;
+    top: 153px;
 }
 #love a{
     position: relative;
-    top: 230px;
+    top: 203px;
 }
 
 .nav-bar li:hover .dropdown{
