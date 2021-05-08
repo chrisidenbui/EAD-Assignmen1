@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/homepage_style.css">
+    <link rel="stylesheet" href="homepage_style.css">
     <title> Photographics - Homepage </title>
 </head>
 <body>
-    <header>
+    <section>
         <nav class="nav-bar">
             <div class="max-width">
                 <div class="logo">
@@ -54,9 +54,26 @@
                 </div>
             </div>
         </nav>
-    </header>
+        <div class="photo-slider">
+            <img src="../Images/sky-5375005.jpg" class="main_image" id="main_image">
+            <div class="tagline">"a travers forêt ou alpage"</div>
+            <div class="info">
+                Photo of the day by: "ttfatty1012" <br>
+                Tag: forest, mystical, gloomy
+            </div>
+            <div class="view">View Image</div>
+            <div class = "pager">
+                <button class="btn" id="#prevBtn" onclick="prevImg()">Prev </button>
+                <span class="dot active" id="dot1"></span>
+                <span class="dot" id="dot2"></span>
+                <span class="dot" id="dot3"></span>
+                <span class="dot" id="dot4"></span>
+                <button class="btn" onclick="nextImg()"> Next</button>
+            </div>
+        </div>
+    </section>
     <main>
-        <div class="gallery">
+        <div class="gallery" id="gallery">
             <div class="box">
                 <img src="https://images.unsplash.com/photo-1619448700089-c15917f578d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">
             </div>
@@ -81,8 +98,21 @@
             <div class="box">
                 <img src="https://images.unsplash.com/photo-1619422306083-937fb8f27be8?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
             </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1619555240389-708ba2ee7591?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60" alt="">
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1619560946763-22633ffb8f5b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60" alt="">
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1619778290645-3f88886f3533?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
+            </div><div class="box">
+                <img src="https://images.unsplash.com/photo-1619676787002-838325ed050c?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
+            </div><div class="box">
+                <img src="https://images.unsplash.com/photo-1619911087942-74c21c86dedf?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="">
+            </div>
         </div>
     </main>
-    <script src="../JS/homepage_script.js"></script>
+    <script src="homepage_script.js"></script>
 </body>
 </html>
