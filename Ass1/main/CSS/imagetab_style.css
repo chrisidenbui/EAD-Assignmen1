@@ -26,7 +26,7 @@ header{
 
 .container{
     max-width: 120rem;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -277,7 +277,7 @@ nav ul li a:hover::after{
 
 .icon_bar{
     position: absolute;
-    top: 630px;
+    top: 82%;
     left: 25%;
 }
 
@@ -305,67 +305,10 @@ nav ul li a:hover::after{
     left: 770px;
 }
 
-
-/* Responsive when screen width is 1220px max */
-@media screen and (max-width: 800px) {
-    .menu-toggle{
-        display: block;
-    }
-
-    #photos a,  #graphics a, #animals a, #natures a, #sky a, #family a, #love a, .brand, .image, .icon_bar, .left{
-        display: none;
-    }
-
-    nav{
-        padding-top: 0;
-        display: none;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-    }
-
-    #search{
-        position: relative;
-        left: 1%;
-    }
-
-    #login{
-        position: relative;
-        left: 1%;
-    }
-
-    #signUp{
-        position: relative;
-        left: 1%;
-    }
-
-    nav ul{
-        flex-direction: column;
-    }
-
-    nav ul li{
-        margin-top: 5rem;
-    }
-
-    nav ul li a{
-        margin: 0;
-        font-size: 2.5rem;
-    }
-
-    .overlay.menu-open,
-    nav.menu-open{
-        display: flex;
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
 .container_icon{
-    position: relative;
-    top: -60px;
-    left: 1100px;
+    position: absolute;
+    top: 82%;
+    left: 80%;
     width: 180px;
     display: flex;
     align-self: center;
@@ -518,5 +461,30 @@ nav ul li a:hover::after{
         fill: white;
         display:contents;
     }
+}
 
+/* Responsive when screen width is 1220px max */
+@media screen and (max-width: 800px) {
+    .nav-bar{
+        display: none;
+    }
+
+    .brand{
+        position: relative;
+        left: 5%;
+    }
+    .login-signup{
+        position: relative;
+        left: -8%;
+    }
+    .container_icon{
+        position: absolute;
+        top: 92%;
+        left: 66%;
+    }
+    .icon_bar{
+        position: absolute;
+        top: 92%;
+        left: 25%;
+    }
 }
