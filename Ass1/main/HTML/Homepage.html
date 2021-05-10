@@ -4,56 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fredericka+the+Great&family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/homepage_style.css">
+    
     <title> Photographics - Homepage </title>
 </head>
 <body>
-    <section>
-        <nav class="nav-bar">
-            <div class="max-width">
-                <div class="logo">
-                    <a href="">PHOTOGRAPHICS</a>
-                </div> 
-                <ul class="nav-menu">
-                    <li class="main-menu"><a href=""> Home </a></li>
-                    <li class="main-menu"><a href=""> Images </a>
-                        <ul class="dropdown">
-                            <li><a href=""> Photos </a></li>
-                            <li><a href=""> Graphics </a></li>
-                        </ul>
-                    </li>
-                    <li class="main-menu"><a href=""> Topics </a>
-                        <ul class="dropdown">
-                            <li><a href=""> Animals </a></li>
-                            <li><a href=""> Natures </a></li>
-                            <li><a href=""> Sky </a></li>
-                            <li><a href=""> Family </a></li>
-                            <li><a href=""> Love </a></li>
-                        </ul>
-                    </li>
-                    <li class="main-menu"><a href=""> Collections </a></li>
-                    <li class="main-menu"><a href=""> Explore </a></li>
-                </ul>
-                <div class="side-nav">
-                    <div class="search">
-                        <input type="search" placeholder="Search for high-resolution images">
-                        <div id="holder"></div>
-                    </div>
-                    <ul class="login-nav">
-                        <li class="join"><a href=""> Login </a></li>
-                        <li class="separate"></li>
-                        <li class="join"><a href=""> Sign up </a></li>
+    <nav class="nav-bar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="">Photographics</a>
+            </div> 
+            <ul class="nav-menu">
+                <li class="main-menu"><a href=""> Home </a></li>
+                <li class="main-menu"><a href=""> Images </a>
+                    <ul class="dropdown">
+                        <li><a href=""> Photos </a></li>
+                        <li><a href=""> Graphics </a></li>
                     </ul>
-                    <div class="menu-button">
-                        <div class="burger">
-                            <div id="line1"></div>
-                            <div id="line2"></div>
-                            <div id="line3"></div>
-                        </div>
+                </li>
+                <li class="main-menu"><a href=""> Topics </a>
+                    <ul class="dropdown">
+                        <li><a href=""> Animals </a></li>
+                        <li><a href=""> Natures </a></li>
+                        <li><a href=""> Sky </a></li>
+                        <li><a href=""> Family </a></li>
+                        <li><a href=""> Love </a></li>
+                    </ul>
+                </li>
+                <li class="main-menu"><a href=""> Collections </a></li>
+                <li class="main-menu"><a href=""> Explore </a></li>
+            </ul>
+            <div class="side-nav">
+                <div class="search">
+                    <input type="search" placeholder="Search for high-resolution images">
+                    <div id="holder"></div>
+                </div>
+                <ul class="login-nav">
+                    <li class="join"><a href=""> Login </a></li>
+                    <li class="separate"></li>
+                    <li class="join"><a href=""> Sign up </a></li>
+                </ul>
+                <div class="menu-button">
+                    <div class="burger">
+                        <div id="line1"></div>
+                        <div id="line2"></div>
+                        <div id="line3"></div>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <header>
+          
         <div class="photo-slider">
             <img src="../Images/sky-5375005.jpg" class="main_image" id="main_image">
             <div class="tagline">"a travers forêt ou alpage"</div>
@@ -71,7 +76,7 @@
                 <button class="btn" onclick="nextImg()"> Next</button>
             </div>
         </div>
-    </section>
+    </header>
     <main>
         <div class="gallery" id="gallery">
             <div class="box">
@@ -113,6 +118,14 @@
             </div>
         </div>
     </main>
-    <script src="homepage_script.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../JS/homepage_script.js"></script>
 </body>
 </html>

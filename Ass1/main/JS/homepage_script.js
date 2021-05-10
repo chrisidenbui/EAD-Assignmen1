@@ -34,7 +34,7 @@ function setDot(i){
 
 // Transparent navbar when scroll window down
 window.addEventListener("scroll", () => {
-    var header = document.querySelector("section");
+    var header = document.querySelector(".nav-bar");
     header.classList.toggle("sticky", window.scrollY);
 })
 
