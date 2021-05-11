@@ -2,48 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fredericka+the+Great&family=Nosifer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/imagetab_style.css">
+
+    <title> Photographics - Homepage </title>
 </head>
 <body>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<header>
-    <div class="container">
-        <nav>
-            <h1 class="brand"><a href="">Photographics</a></h1>
-            <ul class="nav-bar">
-                <li><a href=""> Home </a></li>
-                <li><a href=""> Images </a>
-                    <ul class="dropdown">
-                        <li id="photos" ><a href=""> Photos </a></li>
-                        <li id="graphics"><a href=""> Graphics </a></li>
-                    </ul>
-                </li>
-                <li class="main-menu"><a href=""> Topics </a>
-                    <ul class="dropdown">
-                        <li id="animals"><a href=""> Animals </a></li>
-                        <li id="natures"><a href=""> Natures </a></li>
-                        <li id="sky"><a href=""> Sky </a></li>
-                        <li id="family"><a href=""> Family </a></li>
-                        <li id="love"><a href=""> Love </a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Collections</a></li>
-                <li><a href="#">Explore</a></li>
+<nav class="nav-bar">
+    <div class="max-width">
+        <div class="logo brand1 brand2">
+            <a href="">Photographics</a>
+        </div>
+        <ul class="nav-menu">
+            <li class="main-menu"><a href=""> Home </a></li>
+            <li class="main-menu"><a href=""> Images </a>
+                <ul class="dropdown">
+                    <li><a href=""> Photos </a></li>
+                    <li><a href=""> Graphics </a></li>
+                </ul>
+            </li>
+            <li class="main-menu"><a href=""> Topics </a>
+                <ul class="dropdown">
+                    <li><a href=""> Animals </a></li>
+                    <li><a href=""> Natures </a></li>
+                    <li><a href=""> Sky </a></li>
+                    <li><a href=""> Family </a></li>
+                    <li><a href=""> Love </a></li>
+                </ul>
+            </li>
+            <li class="main-menu"><a href=""> Collections </a></li>
+            <li class="main-menu"><a href=""> Explore </a></li>
+        </ul>
+        <div class="side-nav side1 side2">
+<!--            <div class="search">-->
+<!--                <input type="search" placeholder="Search for high-resolution images">-->
+<!--                <div id="holder"></div>-->
+<!--            </div>-->
+            <ul class="login-nav">
+                <li class="join"><a href=""> Login </a></li>
+                <li class="separate"></li>
+                <li class="join"><a href=""> Sign up </a></li>
             </ul>
-            <ul class="login-signup">
-                <li id="search"><a href="#">
-                    <img id="search_icon" src="../Images/search.png" width="20" height="20">
-                </a></li>
-                <li id="login"><a href="#">Login</a></li>
-                <li id="signUp"><a href="#">Sign up</a></li>
-            </ul>
-        </nav>
+            <div class="menu-button">
+                <div class="burger">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                </div>
+            </div>
+        </div>
     </div>
-</header>
+</nav>
 
-<div class="left">
-    <h3 class="left" id="photo_credit">Photo by: #username</h3>
+<div class="left left_side1 left_side2">
+    <h3 class="left" id="photo_credit">Photo by:</h3>
     <h3 class="left" id="description">
         Photo description:
     </h3>
@@ -52,16 +68,16 @@
     </h3>
 </div>
 
-<div class="image">
-    <img src="../Images/image.png" alt="Lake picture" width="1080" height="500" style="width:100%;" media="(max-width: 600px)">
+<div class="image_tab img_tab1 image_tab2">
+    <img class="image img1 img2" src="../Images/image.png" alt="Lake picture" width="1080" height="500" media="(max-width: 1500px)">
 </div>
 
-<div class="icon_bar">
+<div class="icon_bar pre_next1 pre_next2">
     <a href=""> <img id="left_icon" src="../Images/circle_chevron_left.png" width="50" height="50"> </a>
     <a href=""> <img id="right_icon" src="../Images/circle_chevron_right.png" width="50" height="50"> </a>
 </div>
 
-<div class="container_icon">
+<div class="container_icon reaction_icon1 reaction_icon2">
     <div class="icon heart">
         <svg viewBox="-8 -28 530 521" xmlns="http://www.w3.org/2000/svg"><path d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0"/></svg>
     </div>
@@ -75,5 +91,15 @@
         <svg id="Capa_1" enable-background="new 0 0 451.111 451.111" viewBox="0 0 451.111 451.111" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 386.667h-322.223v-322.223h161.111v-64.444h-225.555v451.111h451.111v-225.555h-64.444z"/><path d="m290 0v64.444h51.103l-138.329 138.33 45.564 45.564 138.329-138.329v51.103h64.444v-161.112z"/></svg>
     </div>
 </div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../JS/homepage_script.js"></script>
 </body>
 </html>
