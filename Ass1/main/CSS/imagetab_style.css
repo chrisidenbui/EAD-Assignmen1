@@ -343,7 +343,9 @@ a {
 .image{
     position: absolute;
     top: 17%;
-    left: 23%;
+    left: 38%;
+    width: 1500px;
+    height: 800px;
 }
 
 /* ---------------------Icon Part------------------------------------------------------ */
@@ -351,7 +353,7 @@ a {
 .icon_bar{
     position: absolute;
     top: 90%;
-    left: 25%;
+    left: 40%;
 }
 /*Reaction icon*/
 #expand_icon{
@@ -381,7 +383,7 @@ a {
 .container_icon{
     position: absolute;
     top: 90%;
-    left: 80%;
+    left: 85%;
     width: 180px;
     display: flex;
     align-self: center;
@@ -538,215 +540,28 @@ a {
 
 
 /* ---------------------Responsive Part------------------------------------------------------ */
-@media screen and (max-width: 420px) {
-    .search input {
-        font-size: 15px;
-        height: 40px;
-        width: 300px;
-        transition: .3s;
-    }
-    .logo a {
-        position: relative;
-        padding: 10px;
-        left: -30%;
-        color: white;
-        font-size: 15px;
-        font-weight: 600;
-        /* font-family: 'Amatic SC', cursive; */
-        font-family: 'Nosifer', cursive;
-        /* font-family: 'Fredericka the Great', cursive; */
-        transition: .3s;
-    }
-    .side-nav{
-        position: absolute;
-        left: 50%;
-        top: 26%;
-    }
+
+/* Responsive when screen width is 1680px max */
+@media screen and (max-width: 800px) {
     .image{
         position: absolute;
-        top: 10%;
-        left: 4%;
-        width: 550px;
-        height: 200px;
-    }
-    .image_tab{
-        position: absolute;
-        top: 10%;
-        left: 0%;
+        top: 17%;
+        left: 20%;
         width: 600px;
         height: 200px;
     }
-    /*Prev and Next Icon*/
-    .icon_bar{
-        position: absolute;
-        top: 50%;
-        left: 10%;
-    }
-    /*Reaction icon*/
     .container_icon{
         position: absolute;
-        top: 51%;
-        left: 90%;
-        width: 120px;
+        top: 64%;
+        left: 75%;
+        width: 180px;
         display: flex;
         align-self: center;
     }
-
-    /* ---------------------Left Side------------------------------------------------------ */
-    .left{
-        color: white;
-        font-size: 18px;
-        font-family: "Roboto Cn", sans-serif;
+    .icon_bar{
         position: absolute;
-        top: 70%;
-        left: 4%;
-    }
-
-    #photo_credit{
-        position: absolute;
-        top: 80%;
-    }
-
-    #description{
-        position: relative;
-        top: 170px;
-    }
-
-    #tag{
-        position: relative;
-        top: 300px;
-    }
-}
-@media screen and (max-width: 620px) {
-    .brand1 a {
-        position: relative;
-        padding: 10px;
-        left: -30%;
-        color: white;
-        font-size: 15px;
-        font-weight: 600;
-        /* font-family: 'Amatic SC', cursive; */
-        font-family: 'Nosifer', cursive;
-        /* font-family: 'Fredericka the Great', cursive; */
-        transition: .3s;
-    }
-    .side1{
-        position: absolute;
-        left: 50%;
-        top: 26%;
-    }
-    .img1{
-        position: absolute;
-        top: 10%;
-        left: 4%;
-        width: 550px;
-        height: 200px;
-    }
-    .img_tab1{
-        position: absolute;
-        top: 10%;
-        left: 0%;
-        width: 600px;
-        height: 200px;
-    }
-    /*Prev and Next Icon*/
-    .pre_next1{
-        position: absolute;
-        top: 45%;
-        left: 6%;
-    }
-    /*Reaction icon*/
-    .reaction_icon1{
-        position: absolute;
-        top: 45%;
-        left: 64%;
-        width: 120px;
-        display: flex;
-        align-self: center;
-    }
-
-    /* ---------------------Left Side------------------------------------------------------ */
-    .left_side1{
-        color: white;
-        font-size: 18px;
-        font-family: "Roboto Cn", sans-serif;
-        position: absolute;
-        top: 70%;
-        left: 4%;
-    }
-
-    #photo_credit{
-        position: absolute;
-        top: 80%;
-    }
-
-    #description{
-        position: relative;
-        top: 170px;
-    }
-
-    #tag{
-        position: relative;
-        top: 300px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .brand2 a {
-        position: relative;
-        padding: 10px;
-        left: -30%;
-        color: white;
-        font-size: 15px;
-        font-weight: 600;
-        /* font-family: 'Amatic SC', cursive; */
-        font-family: 'Nosifer', cursive;
-        /* font-family: 'Fredericka the Great', cursive; */
-        transition: .3s;
-    }
-    .side2{
-        position: absolute;
-        left: 50%;
-        top: 26%;
-    }
-    .img2{
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        width: 650px;
-        height: 300px;
-    }
-    .img_tab2{
-        position: absolute;
-        top: 10%;
-        left: 0%;
-        width: 600px;
-        height: 200px;
-    }
-    /*Prev and Next Icon*/
-    .pre_next2{
-        position: absolute;
-        top: 40%;
-        left: 15%;
-    }
-    /*Reaction icon*/
-    .reaction_icon2{
-        position: absolute;
-        top: 41%;
-        left: 64%;
-        width: 120px;
-        display: flex;
-        align-self: center;
-    }
-
-    /* ---------------------Left Side------------------------------------------------------ */
-    .left_side2{
-        color: white;
-        font-size: 18px;
-        font-family: "Roboto Cn", sans-serif;
-        position: absolute;
-        top: 50%;
-        left: 10%;
+        top: 64%;
+        left: 42%;
     }
 }
 
@@ -803,5 +618,25 @@ a {
     }
     .nav-menu.display > .main-menu a {
         font-size: 15px;
+    }
+    .image{
+        position: absolute;
+        top: 17%;
+        left: 40%;
+        width: 900px;
+        height: 500px;
+    }
+    .container_icon{
+        position: absolute;
+        top: 64%;
+        left: 75%;
+        width: 180px;
+        display: flex;
+        align-self: center;
+    }
+    .icon_bar{
+        position: absolute;
+        top: 64%;
+        left: 42%;
     }
 }
